@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 60%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font: 19px;
+  transition: 0.5s;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+  color: #d21617;
+}
+
+#LogoHeader {
+  width: 170px;
+  height: auto;
+  cursor: pointer;
+}
+
+#banner {
+  background-image: url("https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 520px;
+}
+
+#trailer-container {
+  width: 100%;
+  /* height: 600px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trailer {
+  height: 400px;
+}
+
+#sinopse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  color: #fff;
+  font-size: 19px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  width: 100%;
+  text-align: justify;
+  padding: 30px;
+}
+
+.button {
+  width: 28%;
+  height: 60px;
+  background-color: #d21617;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin: 2px 30px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.actor-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.cards-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: 50% 5%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+.banner-1 {
+  background-image: url(./imagens/batman-robert-pattinson-foto-divulgacao-warner-bros.jpg);
+  background-position: 56%;
+}
+
+.banner-2 {
+  background-image: url(./imagens/mulher-gato..jpeg);
+}
+.banner-3 {
+  background-image: url(./imagens/gordon.jpeg);
+}
+
+footer {
+  height: 200px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+#LogoFooter {
+  width: 150px;
+}
+.footer-navigation {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 766px) {
+  nav {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .footer-list {
+    line-height: 20px;
+  }
+  #banner {
+    background-position: 38%;
+    height: 300px;
+    margin-top: 40px;
+  }
+
+  #trailer-container {
+    margin-top: 0px;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .trailer {
+    width: 100%;
+  }
+
+  #sinopse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    justify-items: center;
+  }
+
+  .card {
+    max-width: 450px;
+  }
+
+  .banner-2 {
+    background-position: 50% 5%;
+  }
+
+  #logo {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    margin: 20px 0px 10px 0px;
+  }
+
+  #LogoHeader {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #banner {
+    height: 750px;
+  }
+
+  li {
+    font-size: 19px;
+  }
+
+  #trailer-container {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer {
+    width: 70%;
+    height: 650px;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 22px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  #sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 05px;
+    font-size: 20px;
+  }
+
+  .card {
+    height: 900px;
+    margin-top: 50px;
+  }
+}
+/* Fim da página home */
+
+/* Abaixo estilização da página "Fotos" */
+.galery-items {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 18px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+  row-gap: 35px;
+}
+
+.photo {
+  width: 290px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.photo:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 905px) {
+  .galery-items {
+    gap: 23px;
+  }
+}
+
+@media (max-width: 611px) {
+  .galery-items {
+    row-gap: 40px;
+  }
+  .photo {
+    width: 350px;
+    height: 290px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .galery-items {
+    padding: 100px;
+    row-gap: 40px;
+    column-gap: 30px;
+  }
+  .photo {
+    width: 390px;
+    height: auto;
+  }
+}
+
+footer {
+  height: 200px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+#LogoFooter {
+  width: 150px;
+}
+.footer-navigation {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fim da página "Fotos" */
+
+/* Abaixo estilização da página "ELENCO" */
+
+.top-banner {
+  width: 100%;
+  height: auto;
+  background-position: 60%;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 1px;
+}
+
+.title {
+  color: #fff;
+  /* margin: 50px 80px 30px 70px; */
+  font-size: 30px;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 40px;
+  text-align: center;
+  margin-top: 31px;
+}
+.actor-card {
+  width: 230px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.actor-card:hover {
+  transform: scale(1.08);
+}
+.actor-img {
+  width: 100%;
+  justify-content: center;
+}
+
+.actor-name {
+  color: #fff;
+  font-size: 23px;
+  margin: 4px 0px 1px 0px;
+}
+.character {
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 18px;
+  }
+  .main-content {
+    padding: 10px;
+  }
+
+  .actor-name {
+    font-size: 18px;
+  }
+  .character {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top-banner {
+    width: 100%;
+    height: 540px;
+  }
+
+  .title {
+    font-size: 37px;
+  }
+  .main-content {
+    padding: 80px;
+  }
+  .actor-card {
+    width: 300px;
+  }
+}
+/* Fim da estilização de "Elenco" */

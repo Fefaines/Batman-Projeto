@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css" />
+  </head>
+  <body>
+    <header>
+      <a href="http://127.0.0.1:5500/Index.html">
+        <img id="LogoHeader" src="./imagens/logo2.jpg"
+      /></a>
+      <nav>
+        <ul>
+          <a href="./Index.html">
+            <li>Home</li>
+          </a>
+          <a href="./Contato.html">
+            <li>Contato</li>
+          </a>
+
+          <a href="./Fotos.html">
+            <li>Fotos</li>
+          </a>
+
+          <a href="./Elenco.html">
+            <li>Elenco</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <section>
+        <h2 class="title">Contate-nos!</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <label for="name" class="item">Nome</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Digite seu nome"
+            autocomplete="off"
+            required
+          />
+          <label for="email" class="item">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            autocomplete="off"
+            required
+          />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Digite sua mensagem"
+          ></textarea>
+          <button tyoe="submit" class="item">Enviar</button>
+          <input
+            type="hidden"
+            name="accessKey"
+            value="4efdc47e-5c99-48c1-aaa8-446f9ebf4d1e"
+            required
+          />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="http://127.0.0.1:5500/Contato.html"
+          />
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <a href="">
+        <img
+          style="object-fit: contain"
+          id="LogoFooter"
+          src="./imagens/logo2.jpg"
+        />
+      </a>
+      <span> Todos os direitos reservados ©</span>
+      <span>Desenvolvido por Fernanda Inês</span>
+
+      <nav class="footer-navigation">
+        <ul class="footer-list">
+          <a href="./Index.html">
+            <li>Home</li>
+          </a>
+          <a href="./Contato.html">
+            <li>Contato</li>
+          </a>
+
+          <a href="./Fotos.html">
+            <li>Fotos</li>
+          </a>
+
+          <a href="./Elenco.html">
+            <li>Elenco</li>
+          </a>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
